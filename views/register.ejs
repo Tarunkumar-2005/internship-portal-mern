@@ -1,0 +1,32 @@
+<% layout('layout') -%>
+<h2>Register</h2>
+<form action="/home" method="POST" class="mt-4">
+  <div class="mb-3">
+    <label for="name" class="form-label">Full Name</label>
+    <input id="name" type="text" name="name" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input id="email" type="email" name="email" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Phone</label>
+    <input id="phone" type="text" name="phone" class="form-control" required>
+  </div>
+  <div class="mb-3">
+  <label for="role" class="form-label">Role</label>
+  <select id="role" name="role" class="form-select" required>
+    <option value="" disabled selected>Select your role</option>
+    <option value="Intern">Intern</option>
+    <option value="Volunteer">Volunteer</option>
+  </select>
+</div>
+
+  <div class="mb-3">
+    <label for="motivation" class="form-label">Motivation</label>
+    <textarea id="motivation" name="motivation" class="form-control" rows="4"></textarea>
+  </div>
+  <button type="submit" class="btn btn-success">Submit Application</button>
+</form>
+
+

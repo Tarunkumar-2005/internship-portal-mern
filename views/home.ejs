@@ -1,0 +1,12 @@
+<% layout('layout.ejs') %>
+<h1 class="text-center mb-4">Welcome to the Intern/Volunteer Application Portal</h1>
+<p class="lead text-center"><b>Register as an intern or volunteer, or login as an admin to view applications.</b></p>
+<div class="text-center mt-5">
+  <a href="/register" class="btn btn-primary me-2">Register</a>
+  <a href="/admin" class="btn btn-success">Admin Login</a>
+</div>
+<% if (success) { %>
+  <script>
+    alert("Applicant Registered Successfully!");
+  </script>
+<% } %>
